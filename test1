@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="EN">
+	<head>
+		<link rel="stylesheet" href="sign_up.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	
+	<body class="content">
+		<h1>Please Sign Up</h1>
+		<form class="myform">
+			<input type="text" placeholder="Enter firstname" class="a" id="x" required name="firstname"></input>
+			<!--
+			<<===setting this id to n, we are not going to apply any rules to n, which will prevent===>
+			<<==it from having rounded corners as it is in the middle
+			-->
+			<input type="text" placeholder="Enter lastname" class="a" id="n" required name="lastname"></input>
+			<input type="email" placeholder="Your email" class="a" id="y" required name="email"></input>
+			<input type="password" placeholder="Your password" class="c" id="pass1" required name="password"></input>
+	        <span class="warning" id="v">Password does not match, recheck password! </span>
+			<span class="success" id="w">&#10003; Password match.</span>
+			
+			<input type="password" placeholder="Confirm password" class="c" id="pass2" required></input>
+			<button type="submit" class="b" id="n">Submit</button>
+		</form>
+	</body>
+	<script src="check-psw.js"></script>
+</html>
